@@ -1,7 +1,9 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
-		"target": "es6",
+		"module": "ESNext",
+		"target": "ES2019",
+		"lib": ["ES2020"],
+		"moduleResolution": "Node",
 		"outDir": "dist",
 		"sourceMap": false,
 		"strict": true,
