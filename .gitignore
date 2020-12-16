@@ -84,8 +84,9 @@ typings/
 .dynamodb/
 
 # TypeScript output
-dist
-out
+*.js
+*.js.map
+*.d.ts
 
 # Azure Functions artifacts
 bin

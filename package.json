@@ -1,37 +1,36 @@
 {
-	"name": "template-repos-ts",
-	"version": "1.0.0",
-	"description": "Template repository for using TypeScript",
-	"main": "index.js",
+	"name": "khaos-starter-kit",
+	"private": true,
+	"description": "Khaos Starter Kit",
 	"scripts": {
 		"test": "ava",
 		"build": "tsc",
 		"watch": "tsc -w",
 		"pretest": "yarn build",
-		"prebuild": "rimraf dist",
+		"prebuild": "rimraf dist bundled",
+		"postbuild": "parcel build dist/index.js --target node --out-dir bundled --no-source-maps --bundle-node-modules --experimental-scope-hoisting",
+		"predeploy": "yarn build",
 		"lint": "yarn lint:eslint && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
 		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'"
 	},
-	"author": "",
-	"license": "MPL-2.0",
 	"dependencies": {
-		"ethereum-waffle": "3.2.1",
+		"@devprotocol/khaos-core": "^0.1.1",
+		"ethers": "^5.0.24",
 		"ramda": "^0.27.1"
 	},
 	"devDependencies": {
 		"@ava/typescript": "1.1.1",
-		"@types/dotenv": "8.2.0",
 		"@types/node": "14.14.14",
 		"@types/ramda": "0.27.33",
 		"@typescript-eslint/eslint-plugin": "4.10.0",
 		"@typescript-eslint/parser": "4.10.0",
 		"ava": "3.14.0",
-		"dotenv": "8.2.0",
 		"eslint": "7.15.0",
 		"eslint-config-prettier": "6.15.0",
 		"eslint-plugin-functional": "3.1.0",
 		"husky": "4.3.6",
+		"parcel-bundler": "^1.12.4",
 		"prettier": "2.2.1",
 		"rimraf": "3.0.2",
 		"typescript": "4.1.3"
@@ -50,13 +49,5 @@
 		"hooks": {
 			"pre-commit": "yarn lint"
 		}
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/dev-protocol/template-repos-ts.git"
-	},
-	"bugs": {
-		"url": "https://github.com/dev-protocol/template-repos-ts/issues"
-	},
-	"homepage": "https://github.com/dev-protocol/template-repos-ts#readme"
+	}
 }
