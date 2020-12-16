@@ -12,7 +12,8 @@
 		"predeploy": "yarn build",
 		"lint": "yarn lint:eslint && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
-		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'"
+		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'",
+		"deploy": "curl -X POST -F file=@bundled/index.js 'https://ipfs.infura.io:5001/api/v0/add?wrap-with-directory=true'"
 	},
 	"dependencies": {
 		"@devprotocol/khaos-core": "0.1.1",

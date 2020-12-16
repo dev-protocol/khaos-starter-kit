@@ -13,8 +13,6 @@ git clone git@github.com:your/khaos-starter-kit.git
 cd khaos-starter-kit
 ```
 
-You also need **IPFS** to deploy the functions. Please refer to [the documentation](https://docs.ipfs.io/install/command-line/#package-managers) and install the ipfs client for your environment.
-
 ## Development
 
 Edit the file in the `src` directory. You have to edit the following files:
@@ -38,13 +36,13 @@ yarn build
 
 A subdirectory named `bundled` is added to this directory, and `bundled/index.js` is generated.
 
-Add the `bundled` directory to IPFS.
+Then add `bundled/index.js` to the IPFS. You can add files to the IPFS node provided by Infura using the following command. (Use curl)
 
 ```bash
-ipfs add -r bundled
+yarn deploy
 
-> added [IPFS_HASH_FOR_FILE] bundled/index.js
-> added [IPFS_HASH_FOR_DIRECTORY] bundled
+> {"Name":"index.js","Hash":"IPFS_HASH_FOR_FILE","Size":"554"}
+> {"Name":"","Hash":"IPFS_HASH_FOR_DIRECTORY","Size":"609"}
 ```
 
 Your function has been deployed!
