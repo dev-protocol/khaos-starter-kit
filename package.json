@@ -15,9 +15,9 @@
 		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'"
 	},
 	"dependencies": {
-		"@devprotocol/khaos-core": "^0.1.1",
-		"ethers": "^5.0.24",
-		"ramda": "^0.27.1"
+		"@devprotocol/khaos-core": "0.1.1",
+		"ethers": "5.0.24",
+		"ramda": "0.27.1"
 	},
 	"devDependencies": {
 		"@ava/typescript": "1.1.1",
@@ -30,7 +30,7 @@
 		"eslint-config-prettier": "6.15.0",
 		"eslint-plugin-functional": "3.1.0",
 		"husky": "4.3.6",
-		"parcel-bundler": "^1.12.4",
+		"parcel-bundler": "1.12.4",
 		"prettier": "2.2.1",
 		"rimraf": "3.0.2",
 		"typescript": "4.1.3"
