@@ -1,20 +1,52 @@
-# template-repos-ts
+# Khaos Starter Kit
 
-Template repository for using TypeScript
+How to start developing Khaos Functions
 
-# Stack
+## Environment
 
-- npm client is [yarn](https://github.com/yarnpkg/yarn)
-- Testing is [ava](https://github.com/avajs/ava)
-- Linting is [eslint](https://github.com/eslint/eslint)
-- Basic lint rule set is [eslint-plugin-functional](https://github.com/jonaskello/eslint-plugin-functional)
-- Formatter is [prettier](https://github.com/prettier/prettier)
-- Pre-install utility is [ramda](https://github.com/ramda/ramda)
+First, fork this repository.
 
-# Usage
-
-Create a repository using this template; just runs following command.
+Then clone the forked repository.
 
 ```bash
-yarn
+git clone git@github.com:your/khaos-starter-kit.git
+cd khaos-starter-kit
 ```
+
+You also need **IPFS** to deploy the functions. Please refer to [the documentation](https://docs.ipfs.io/install/command-line/#package-managers) and install the ipfs client for your environment.
+
+## Development
+
+Edit the file in the `src` directory. You have to edit the following files:
+
+- src/abi.ts
+- src/addresses.ts
+- src/authorize.ts
+- src/oraclize.ts
+
+And update the tests.
+
+You can add or remove dependencies if you want.
+
+## Deployment
+
+When the function is ready, build the source code with the following command.
+
+```bash
+yarn build
+```
+
+A subdirectory named `bundled` is added to this directory, and `bundled/index.js` is generated.
+
+Add the `bundled` directory to IPFS.
+
+```bash
+ipfs add -r bundled
+
+> added [IPFS_HASH_FOR_FILE] bundled/index.js
+> added [IPFS_HASH_FOR_DIRECTORY] bundled
+```
+
+Your function has been deployed!
+
+Submit `IPFS_HASH_FOR_DIRECTORY` to the Khaos Registry.
