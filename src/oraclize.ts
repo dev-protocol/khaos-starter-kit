@@ -1,9 +1,13 @@
 import { FunctionOraclizer } from '@devprotocol/khaos-core/types'
 
-export const oraclize: FunctionOraclizer = async (opts, eventData, net) => {
+export const oraclize: FunctionOraclizer = async ({
+	signatureOptions,
+	query,
+	network,
+}) => {
 	return {
-		message: opts.message,
+		message: signatureOptions.message,
 		status: 0,
-		statusMessage: `${net} ${eventData.publicSignature}`,
+		statusMessage: `${network} ${query.publicSignature}`,
 	}
 }
