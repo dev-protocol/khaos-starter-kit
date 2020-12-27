@@ -1,4 +1,4 @@
-import { FunctionAddresses } from '@devprotocol/khaos-core/types'
+import { FunctionAddresses } from '@devprotocol/khaos-core'
 
 export const addresses: FunctionAddresses = async ({ network }) =>
 	network === 'mainnet'
