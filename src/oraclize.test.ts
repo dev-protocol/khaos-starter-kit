@@ -7,7 +7,7 @@ test('oraclize is executed.', async (t) => {
 		query: { allData: '{}', publicSignature: 'dummy-public-signature' } as any,
 		network: 'mainnet',
 	})
-	t.is(res.message, 'data')
-	t.is(res.status, 0)
-	t.is(res.statusMessage, 'mainnet dummy-public-signature')
+	t.is(res!.message, 'data')
+	t.is(res!.status, 0)
+	t.is(res!.statusMessage, 'mainnet dummy-public-signature')
 })
