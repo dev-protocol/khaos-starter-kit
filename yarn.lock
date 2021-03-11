@@ -903,10 +903,10 @@
   dependencies:
     arrify "^1.0.1"
 
-"@devprotocol/khaos-core@1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@devprotocol/khaos-core/-/khaos-core-1.2.3.tgz#f411b5a510674c712bb0716d43f5b64e70788e51"
-  integrity sha512-aovocHv8XQ4edT05J5OPvLLXBStyP0VhAvRYVwbLHYsp/gpQe81XCg9XPVe79wGwSn5LEULWzjhj3U8HUlsjtA==
+"@devprotocol/khaos-core@1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@devprotocol/khaos-core/-/khaos-core-1.2.4.tgz#ce9dbb4da87e8cecedb685dfdb7528786b7b8267"
+  integrity sha512-qjQnOj3wSXeLbhVh1tYcxudes4v8ME58Nmi8VhKnSutTbwB4mVjLJS8z6ZaTkytcmog/sPxGFgC6DIQ9n0Sc2w==
   dependencies:
     "@azure/functions" "^1.2.3"
     "@devprotocol/util-ts" "2.1.0"
