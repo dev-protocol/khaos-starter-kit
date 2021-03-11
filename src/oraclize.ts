@@ -6,7 +6,7 @@ export const oraclize: FunctionOraclizer = async ({
 	network,
 }) => {
 	return {
-		message: signatureOptions.message,
+		message: signatureOptions?.message ?? 'empty',
 		status: 0,
 		statusMessage: `${network} ${query.publicSignature}`,
 	}
