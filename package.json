@@ -33,7 +33,7 @@
 		"eslint-config-prettier": "8.1.0",
 		"eslint-plugin-functional": "3.2.1",
 		"esm": "3.2.25",
-		"husky": "5.2.0",
+		"husky": "6.0.0",
 		"parcel-bundler": "1.12.5",
 		"prettier": "2.2.1",
 		"rimraf": "3.0.2",
