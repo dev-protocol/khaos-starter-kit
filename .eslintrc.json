@@ -21,8 +21,7 @@
 			"rules": {
 				"functional/no-expression-statement": "off",
 				"functional/functional-parameters": "off",
-				"@typescript-eslint/no-explicit-any": "off",
-				"functional/no-conditional-statement": "off"
+				"@typescript-eslint/no-explicit-any": "off"
 			}
 		}
 	]
