@@ -7,6 +7,7 @@ test('oraclize is executed.', async (t) => {
 		query: { allData: '{}', publicSignature: 'dummy-public-signature' } as any,
 		network: 'mainnet',
 	})
+	/* eslint-disable functional/no-conditional-statement */
 	if (res) {
 		t.is(res.message, 'data')
 		t.is(res.status, 0)
@@ -19,6 +20,7 @@ test('returns `empty` as the message property when the passed signatureOptions i
 		query: { allData: '{}', publicSignature: 'dummy-public-signature' } as any,
 		network: 'mainnet',
 	})
+	/* eslint-disable functional/no-conditional-statement */
 	if (res) {
 		t.is(res.message, 'empty')
 		t.is(res.status, 0)
