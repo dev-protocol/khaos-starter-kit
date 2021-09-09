@@ -21,7 +21,7 @@
 		"ramda": "0.27.1"
 	},
 	"devDependencies": {
-		"@ava/typescript": "1.1.1",
+		"@ava/typescript": "2.0.0",
 		"@rollup/plugin-commonjs": "20.0.0",
 		"@rollup/plugin-node-resolve": "13.0.4",
 		"@types/node": "14.17.15",
@@ -50,7 +50,8 @@
 		"typescript": {
 			"rewritePaths": {
 				"src/": "dist/"
-			}
+			},
+			"compile": false
 		}
 	},
 	"husky": {
