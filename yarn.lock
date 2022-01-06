@@ -10,10 +10,10 @@
     escape-string-regexp "^4.0.0"
     execa "^5.0.0"
 
-"@azure/functions@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@azure/functions/-/functions-1.2.3.tgz#65765837e7319eedffbf8a971cb2f78d4e043d54"
-  integrity sha512-dZITbYPNg6ay6ngcCOjRUh1wDhlFITS0zIkqplyH5KfKEAVPooaoaye5mUFnR+WP9WdGRjlNXyl/y2tgWKHcRg==
+"@azure/functions@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@azure/functions/-/functions-3.0.0.tgz#1466371562591d17232d39eea2126fb5deb60beb"
+  integrity sha512-nxOdQdYoy9JEdAPsQlBWavsRvbH5qT2fpwMcY64s1sLIT8QwtW7ebh/MJNgzeAac+JaC6IED7plDiizq8oZUNw==
 
 "@babel/code-frame@^7.0.0":
   version "7.8.3"
@@ -64,12 +64,12 @@
   dependencies:
     arrify "^1.0.1"
 
-"@devprotocol/khaos-core@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@devprotocol/khaos-core/-/khaos-core-1.5.1.tgz#eadb211634cf3e1ec9ca9ee69631b215ad9fe430"
-  integrity sha512-VTSWfPdXXCDA304XTiWwwPV/m4doOm2V1GIjkbBXKqGowxAA0bccoLNzGOnvGwVUj5LMswSR8iEnLxG4Rs3Zng==
+"@devprotocol/khaos-core@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@devprotocol/khaos-core/-/khaos-core-1.6.0.tgz#3bc981fa2eab0583514c115464a6a4414a254f4c"
+  integrity sha512-QPMW8730mv4l5w6Z4/2hvuD7ORyNDkymewI0UivemTFZ5T+Q1RBdKi6EgtYPmS3uFZ/rnnz0fMkgJKKdnBg3Pg==
   dependencies:
-    "@azure/functions" "^1.2.3"
+    "@azure/functions" "^3.0.0"
     "@devprotocol/util-ts" "2.2.1"
     "@ethersproject/abi" "^5.1.0"
     jsonwebtoken "^8.5.1"
