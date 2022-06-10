@@ -13,7 +13,7 @@
 		"lint": "yarn lint:eslint && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
 		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'",
-		"deploy": "curl -X POST -F file=@bundled/index.js 'https://ipfs.infura.io:5001/api/v0/add?wrap-with-directory=true'"
+		"deploy": "curl -X POST -F file=@bundled/index.js 'https://ipfs.infura.io:5001/api/v0/add?pin=true'"
 	},
 	"dependencies": {
 		"@devprotocol/khaos-core": "1.6.0",
