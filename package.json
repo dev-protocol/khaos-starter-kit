@@ -17,7 +17,7 @@
 	},
 	"dependencies": {
 		"@devprotocol/khaos-core": "1.6.0",
-		"ethers": "5.6.8",
+		"ethers": "5.6.9",
 		"ramda": "0.28.0"
 	},
 	"devDependencies": {
