@@ -31,7 +31,7 @@
 		"ava": "3.15.0",
 		"eslint": "8.23.1",
 		"eslint-config-prettier": "8.5.0",
-		"eslint-plugin-functional": "4.3.2",
+		"eslint-plugin-functional": "4.4.0",
 		"esm": "3.2.25",
 		"husky": "7.0.4",
 		"prettier": "2.7.1",
