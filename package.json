@@ -21,7 +21,7 @@
 		"ramda": "0.28.0"
 	},
 	"devDependencies": {
-		"@ava/typescript": "2.0.0",
+		"@ava/typescript": "3.0.1",
 		"@rollup/plugin-commonjs": "22.0.2",
 		"@rollup/plugin-node-resolve": "14.1.0",
 		"@types/node": "18.15.0",
