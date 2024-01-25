@@ -25,7 +25,7 @@
 		"@rollup/plugin-commonjs": "22.0.2",
 		"@rollup/plugin-node-resolve": "14.1.0",
 		"@types/node": "20.10.3",
-		"@types/ramda": "0.29.9",
+		"@types/ramda": "0.29.10",
 		"@typescript-eslint/eslint-plugin": "5.62.0",
 		"@typescript-eslint/parser": "5.62.0",
 		"ava": "3.15.0",
