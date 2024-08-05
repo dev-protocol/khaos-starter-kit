@@ -23,7 +23,7 @@
 	"devDependencies": {
 		"@ava/typescript": "2.0.0",
 		"@pinata/sdk": "^2.1.0",
-		"@rollup/plugin-commonjs": "25.0.7",
+		"@rollup/plugin-commonjs": "25.0.8",
 		"@rollup/plugin-node-resolve": "15.2.3",
 		"@types/node": "20.12.7",
 		"@types/ramda": "0.29.12",
